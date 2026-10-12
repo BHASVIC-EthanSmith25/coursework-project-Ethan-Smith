@@ -1,0 +1,22 @@
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans'
+}
+form{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans';
+}
+
+h2{
+    font-family: 'Lucida Sans';
+}
+
+#title{
+    font-family: 'Lucida Sans';
+}
+
+#release-date{
+    font-family: 'Lucida Sans';
+}
