@@ -9,7 +9,7 @@ APIKey = "80e56bb69b5b76bdccb8df79f57f71dd"
 def searchMovies(searchInput):
     url = "https://api.themoviedb.org/3/search/movie" #the URL for the movie database API
     parameters = {
-        "APIkey": APIKey,
+        "api_key": APIKey,
         "query": searchInput 
     } # parameters for the request 
     response = requests.get(url, params=parameters) #sends a request to the API
