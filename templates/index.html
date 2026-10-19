@@ -19,8 +19,12 @@
 
     <h2>Search Results</h2>
     {%for movie in movies %}
-        <h3 id="title">{{ movie["title"]}}</h3>
+        <h3 id="title"><strong>{{ movie["title"]}}</strong></h3> 
         <p id="release-date">{{ movie["release_date"] }}</p>
+        <img id="poster" src="https://image.tmdb.org/t/p/w500{{ movie['poster_path'] }}" alt="Movie Poster">
+        <a href = "{{ url_for('moviePage', movieId=movie['id']) }}">View film</a>
+        <hr>
+        
     {%endfor%}
 
 </body>

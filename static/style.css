@@ -1,8 +1,14 @@
 h1{
     display: flex;
     justify-content: center;
-    font-family: 'Lucida Sans'
+    font-family: 'Lucida Sans';
+
 }
+
+body{
+    background-color: grey;
+}
+
 form{
     display: flex;
     justify-content: center;
@@ -15,8 +21,34 @@ h2{
 
 #title{
     font-family: 'Lucida Sans';
+
 }
 
 #release-date{
     font-family: 'Lucida Sans';
+}
+
+#poster{
+    display: block;
+    width: 300px;
+    height: auto;
+    align-items: center;
+}
+
+#moviePageReleaseDate{
+  position: absolute;
+  top: 100px;
+  left: 400px;
+
+}
+#overview{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+}
+
+#tagline{
+    position: absolute;
+    top: 300px;
+    left: 400px;
 }
