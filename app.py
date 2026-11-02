@@ -17,7 +17,7 @@ def searchMovies(searchInput):
     return data["results"] #returns the results from the API response
 
 def getDetails(movieId):
-    url = f"https://api.themoviedb.org/3/movie/{movieId}" #the URL for the movie database API
+    url = f"https://api.themoviedb.org/3/movie/{movieId}?append_to_response=credits" #the URL for the movie database API
     parameters = {"api_key": APIKey} # parameters for the request
     response = requests.get(url, params=parameters) #sends a request to the API
     return response.json()

@@ -7,6 +7,7 @@ h1{
 
 body{
     background-color: grey;
+    font-family: 'Lucida Sans';
 }
 
 form{
@@ -28,11 +29,16 @@ h2{
     font-family: 'Lucida Sans';
 }
 
-#poster{
-    display: block;
-    width: 300px;
-    height: auto;
-    align-items: center;
+#resultsPoster{
+    img{
+        display: flex;
+        width: 200px;
+        height: auto;
+        
+    }
+    img:hover{
+        cursor: pointer;
+    }
 }
 
 #moviePageReleaseDate{
@@ -43,12 +49,20 @@ h2{
 }
 #overview{
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 400px;
 }
 
 #tagline{
     position: absolute;
-    top: 300px;
+    top: 150px;
     left: 400px;
+}
+
+#poster{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    height: auto;
 }
