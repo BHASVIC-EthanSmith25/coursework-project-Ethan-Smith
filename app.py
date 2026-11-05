@@ -20,7 +20,14 @@ def getDetails(movieId):
     url = f"https://api.themoviedb.org/3/movie/{movieId}?append_to_response=credits" #the URL for the movie database API
     parameters = {"api_key": APIKey} # parameters for the request
     response = requests.get(url, params=parameters) #sends a request to the API
-    return response.json()
+    data = response.json()
+
+    director = ""
+    for crew_member in data["credits"]["crew"]:
+        if crew_member["job"] == "Director":
+            director = crew_member["name"]
+    data["director"] = director
+    return data #returns the results from the API response
 
 @app.route("/", methods=["GET", "POST"]) #defines the route for the home page
 def home():
