@@ -42,20 +42,28 @@ h2{
 }
 
 #moviePageReleaseDate{
-  position: absolute;
-  top: 100px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  top: 30px;
   left: 400px;
 
 }
 #overview{
-    position: absolute;
-    top: 200px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 700px;
+    flex-wrap: wrap;
+    position: relative;
     left: 400px;
+    top: -100px;
 }
 
 #tagline{
-    position: absolute;
-    top: 150px;
+    display: flex;
+    position: relative;
+    top: -100px;
     left: 400px;
 }
 
@@ -68,7 +76,22 @@ h2{
 }
 
 #director{
-    position: absolute;
-    top: 150px;
-    right: 400px;
+    display: flex;
+    position: relative;
+    top: -90px;
+    left: 550px;
+    width: 400px;
+    flex-direction: row;
+    justify-content: start;
 }
+
+#runtime{
+    display: flex;
+    position: relative;
+    top: -90px;
+    left: 575px;
+    width: 400px;
+    flex-direction: row;
+    justify-content: start;
+}
+
